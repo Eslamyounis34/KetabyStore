@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#141414"
+    android:clickable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical"
+    tools:context=".RequestNovel">
+
+    <include
+        layout="@layout/toolbar"
+        android:id="@+id/bookinfotool"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/novelname"
+        android:hint="اسم الروايه"
+        android:textColorHint="#BDBDBD"
+        android:backgroundTint="#fff"
+        android:textColorHighlight="#fff"
+        android:layout_margin="15dp"
+        android:gravity="center_horizontal"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/novelauthor"
+        android:hint="اسم المؤلف"
+        android:textColorHighlight="#fff"
+        android:textColorHint="#BDBDBD"
+        android:backgroundTint="#fff"
+        android:layout_margin="15dp"
+        android:gravity="center_horizontal"
+        />
+
+    <ImageView
+        android:layout_width="210dp"
+        android:layout_height="50dp"
+        android:text="ارسل"
+        android:id="@+id/sendrequest"
+        android:background="@drawable/requestbookbutton"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="15dp"/>
+
+
+
+</LinearLayout>

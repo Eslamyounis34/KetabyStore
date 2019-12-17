@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/splashbg"
+    tools:context=".SplashScreen">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true">
+
+        <ImageView
+            android:layout_width="240dp"
+            android:layout_height="240dp"
+            android:src="@drawable/splashapplogo"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="70dp"
+            android:id="@+id/logo"
+
+            />
+
+        <RelativeLayout
+            android:id="@+id/relativeappname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/logo"
+            android:layout_marginTop="-37dp"
+            android:layout_marginBottom="0dp">
+
+            <TextView
+                android:id="@+id/appname"
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:layout_centerHorizontal="true"
+                android:fontFamily="@font/arialnarroww"
+                android:text="KETABY STORE"
+                android:textColor="#fff"
+                android:textSize="45sp"
+                 />
+
+
+        </RelativeLayout>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="اختر كتابك .. وابدأ رحلتك"
+            android:layout_below="@id/relativeappname"
+            android:fontFamily="@font/arialnarroww"
+            android:layout_marginTop="5dp"
+            android:textColor="#fff"
+            android:id="@+id/slogan"
+            android:layout_centerHorizontal="true"
+            android:textSize="25sp"/>
+
+
+        </RelativeLayout>
+
+</RelativeLayout>

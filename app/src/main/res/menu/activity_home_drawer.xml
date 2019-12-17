@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/arabya"
+            android:icon="@drawable/kotoparabya"
+            android:title="كتب عربية"
+            android:iconTint="#fff"
+            />
+        <item
+            android:id="@+id/motrgma"
+            android:icon="@drawable/kotopmotrgma"
+            android:title="كتب مترجمة"
+            android:iconTint="#fff">
+        </item>
+        <item
+            android:id="@+id/deneya"
+            android:icon="@drawable/kotopdenya"
+            android:title="كتب دينية"
+            android:iconTint="#fff">
+        </item>
+        <item
+            android:id="@+id/tnmya"
+            android:icon="@drawable/kotophr"
+            android:title="كتب تنمية بشرية"
+            android:iconTint="#fff">
+        </item>
+    </group>
+    <item
+        android:title="أخري"
+        android:iconTint="#fff"
+        >
+        <menu>
+            <item
+                android:id="@+id/otlobketab"
+                android:icon="@drawable/buyicon"
+                android:title="اطلب كتابك"
+                android:iconTint="#fff"
+                />
+            <item
+                android:id="@+id/downloads"
+                android:icon="@drawable/historyy"
+                android:title="التحميلات"
+                android:iconTint="#fff"
+                />
+            <item
+                android:id="@+id/favourites"
+                android:icon="@drawable/favourites"
+                android:title="المفضله"
+                android:iconTint="#fff"
+                />
+            <item
+                android:id="@+id/shareapp"
+                android:icon="@drawable/share"
+                android:title="مشاركة التطبيق"
+                android:iconTint="#fff"
+                />
+            <item
+                android:id="@+id/contactus"
+                android:icon="@drawable/facebookicon"
+                android:title="صفحتنا علي فيس بوك"
+                android:iconTint="#fff"
+                />
+        </menu>
+
+    </item>
+</menu>

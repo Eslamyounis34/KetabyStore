@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#141414"
+    tools:context=".AuthorInfo">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <include
+            layout="@layout/toolbar"
+            android:id="@+id/bookinfotool"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/profile_image"
+            android:layout_width="150dp"
+            android:layout_below="@id/bookinfotool"
+            android:layout_height="150dp"
+            android:src="@drawable/bookicon"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="20dp"
+            app:civ_border_width="2dp"
+            app:civ_border_color="#fff"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="معلومات عامة"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:id="@+id/infotx"
+            android:layout_alignParentRight="true"
+            android:layout_margin="5dp"
+            android:textColor="#d50000"
+            android:fontFamily="@font/droidkufiregular"
+            android:layout_below="@id/profile_image"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#fff"
+            android:layout_margin="10dp"
+            android:id="@+id/authorinfo"
+            android:layout_below="@id/infotx"
+            android:fontFamily="@font/droidkufiregular"
+            android:text=" مواليد 1984 بتونس العاصمة  .. متحصلة على شهادة في الهندسة الصناعية و الماجستير من مدرسة  في مدينة سانت إتيان الفرنسية سنة 2008.. متحصلة على الدكتوراه في بحوث العمليات (أحد فروع الرياضيات التطبيقية) من جامعة التكنولوجيا بمدينة تروا بفرنسا سنة 2011 .. روايتها الأولى الصادرة سنة 2012 تحمل عنوان  و هي مستوحاة من قصة حقيقية ليهودية تونسية دخلت الإسلام بعد تأثرها بشخصية طفلة مسلمة يتيمة الأبوين صمدت في وجه الحياة بشجاعة، و بشخصية شاب لبناني مقاوم ترك بصمة في حياتها"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="المؤلفات و الروايات"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:id="@+id/novelsofauthor"
+            android:layout_alignParentRight="true"
+            android:layout_margin="5dp"
+            android:textColor="#d50000"
+            android:layout_below="@id/authorinfo"
+            android:fontFamily="@font/droidkufiregular"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#fff"
+            android:layout_margin="10dp"
+            android:fontFamily="@font/droidkufiregular"
+            android:layout_below="@id/novelsofauthor"
+            android:id="@+id/bestnovels"
+            android:layout_alignParentRight="true"
+            android:text="اهم اعمالها : غربة الياسمين , ان تبقي , في قلبي انثي عبريه و اين المفر"/>
+    </RelativeLayout>
+
+
+</ScrollView>

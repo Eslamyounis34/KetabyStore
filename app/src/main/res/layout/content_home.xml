@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".HomeActivity"
+    android:clickable="true"
+    android:focusableInTouchMode="true"
+    android:background="#141414"
+    tools:showIn="@layout/app_bar_home">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clickable="true"
+        android:focusableInTouchMode="true">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:weightSum="3"
+        android:clickable="true"
+        android:focusableInTouchMode="true"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:id="@+id/firstSection">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="45dp"
+                android:id="@+id/backdrop"
+                android:src="@drawable/backdrop"
+                android:scaleType="centerCrop"/>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                app:cardCornerRadius="22dp">
+
+                <android.support.v7.widget.SearchView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/searchview"
+                    app:defaultQueryHint="ابحث عن كتابك"
+                    android:background="#fff"
+                    app:queryHint="ابحث عن كتابك"
+                    >
+
+                </android.support.v7.widget.SearchView>
+            </android.support.v7.widget.CardView>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_below="@id/firstSection"
+            android:layout_weight="1"
+            android:id="@+id/secondSection">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="الاكثر قراءة"
+                android:gravity="right"
+                android:textSize="23sp"
+                android:fontFamily="@font/droidkufiregular"
+                android:layout_alignParentRight="true"
+                android:textColor="#fff"
+                android:id="@+id/mostread"
+                android:layout_margin="3dp"/>
+            <android.support.v7.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/mostreadrecycler"
+                android:orientation="horizontal"
+                android:layoutDirection="ltr"
+                android:layout_below="@id/mostread">
+
+            </android.support.v7.widget.RecyclerView>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_below="@id/secondSection"
+            android:layout_weight="1"
+            android:id="@+id/thirdSection">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="روايات مترجمة"
+                android:textSize="23sp"
+                android:fontFamily="@font/droidkufiregular"
+                android:textColor="#fff"
+                android:layout_alignParentRight="true"
+                android:id="@+id/rewyatmotrgma"
+                android:layout_margin="3dp"/>
+            <android.support.v7.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/rewayatmotrgmarecycler"
+                android:layoutDirection="ltr"
+                android:orientation="horizontal"
+                android:layout_below="@id/rewyatmotrgma"/>
+        </RelativeLayout>
+    </LinearLayout>
+    </RelativeLayout>
+</ScrollView>

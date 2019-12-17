@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="50dp"
+    android:background="#141414"
+    >
+    <include
+        layout="@layout/summarytoolbar"
+        android:layout_width="match_parent"
+        android:id="@+id/summarytoolbar"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/custom_dialog_summ"
+        android:fontFamily="@font/droidkufiregular"
+        android:layout_below="@id/summarytoolbar"
+        android:layout_margin="15dp"
+        android:textSize="18sp"/>
+
+
+
+</RelativeLayout>
