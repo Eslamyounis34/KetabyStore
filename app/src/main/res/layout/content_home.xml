@@ -5,53 +5,48 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context=".HomeActivity"
+    tools:context=".activities.HomeActivity"
     android:clickable="true"
     android:focusableInTouchMode="true"
+    android:fillViewport="true"
     android:background="#141414"
     tools:showIn="@layout/app_bar_home">
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:clickable="true"
-        android:focusableInTouchMode="true">
+
     <LinearLayout
         android:layout_width="match_parent"
         android:orientation="vertical"
         android:weightSum="3"
         android:clickable="true"
+        android:fillViewport="true"
         android:focusableInTouchMode="true"
-        android:layout_height="wrap_content">
+        android:layout_height="match_parent">
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="1"
             android:id="@+id/firstSection">
-            <ImageView
+            <RelativeLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="45dp"
-                android:id="@+id/backdrop"
-                android:src="@drawable/backdrop"
-                android:scaleType="centerCrop"/>
-
+                android:layout_height="match_parent"
+                android:background="#141414"
+                >
             <android.support.v7.widget.CardView
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="match_parent"
                 android:layout_margin="10dp"
-                app:cardCornerRadius="22dp">
+                app:cardCornerRadius="10dp">
 
-                <android.support.v7.widget.SearchView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:id="@+id/searchview"
-                    app:defaultQueryHint="ابحث عن كتابك"
-                    android:background="#fff"
-                    app:queryHint="ابحث عن كتابك"
-                    >
-
-                </android.support.v7.widget.SearchView>
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/backdrop"
+                        android:scaleType="fitXY"
+                        android:id="@+id/slider"
+                        />
             </android.support.v7.widget.CardView>
+        </RelativeLayout>
+
+
         </RelativeLayout>
         <RelativeLayout
             android:layout_width="match_parent"
@@ -73,6 +68,7 @@
             <android.support.v7.widget.RecyclerView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:fillViewport="true"
                 android:id="@+id/mostreadrecycler"
                 android:orientation="horizontal"
                 android:layoutDirection="ltr"
@@ -102,9 +98,9 @@
                 android:layout_height="wrap_content"
                 android:id="@+id/rewayatmotrgmarecycler"
                 android:layoutDirection="ltr"
+                android:fillViewport="true"
                 android:orientation="horizontal"
                 android:layout_below="@id/rewyatmotrgma"/>
         </RelativeLayout>
     </LinearLayout>
-    </RelativeLayout>
 </ScrollView>

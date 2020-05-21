@@ -5,13 +5,13 @@
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"></uses-permission>
 
     <supports-screens
         android:anyDensity="true"
         android:largeScreens="true"
         android:normalScreens="true"
+
         android:smallScreens="true"
         android:xlargeScreens="true" />
 
@@ -23,51 +23,51 @@
         android:supportsRtl="true"
         tools:replace="android:label"
         android:theme="@style/AppTheme">
-        <activity android:name=".SearchResults"
+        <activity android:name=".activities.SearchResults"
             android:theme="@style/Theme.AppCompat.NoActionBar"></activity>
         <activity android:name=".test" />
         <activity
-            android:name=".PdfViwerActivity"
+            android:name=".activities.PdfViwerActivity"
             android:theme="@style/Theme.AppCompat.NoActionBar" />
         <activity
-            android:name=".DownloadsActivity"
+            android:name=".activities.DownloadsActivity"
             android:theme="@style/Theme.AppCompat.NoActionBar" />
         <activity
-            android:name=".AuthorInfo"
+            android:name=".activities.AuthorInfo"
             android:theme="@style/Theme.AppCompat.NoActionBar" />
         <activity
-            android:name=".Favourites"
+            android:name=".activities.Favourites"
             android:theme="@style/Theme.AppCompat.NoActionBar" />
         <activity
-            android:name=".RequestNovel"
+            android:name=".activities.RequestNovel"
             android:theme="@style/Theme.AppCompat.NoActionBar" />
         <activity
-            android:name=".HumanDevelopmentNovels"
+            android:name=".activities.HumanDevelopmentNovels"
             android:theme="@style/Theme.AppCompat.NoActionBar" />
         <activity
-            android:name=".ReligiousNovels"
+            android:name=".activities.ReligiousNovels"
             android:theme="@style/Theme.AppCompat.NoActionBar" />
         <activity
-            android:name=".TranslatedNovels"
+            android:name=".activities.TranslatedNovels"
             android:theme="@style/Theme.AppCompat.NoActionBar" />
         <activity
-            android:name=".ArabicNovels"
+            android:name=".activities.ArabicNovels"
             android:theme="@style/Theme.AppCompat.NoActionBar" />
         <activity
-            android:name=".SeeFullReview"
+            android:name=".activities.SeeFullReview"
             android:theme="@style/Theme.AppCompat.NoActionBar" />
         <activity
-            android:name=".ReadBookActivity"
+            android:name=".activities.ReadBookActivity"
             android:theme="@style/Theme.AppCompat.NoActionBar" />
         <activity
-            android:name=".BookInfo"
+            android:name=".activities.BookInfo"
             android:theme="@style/Theme.AppCompat.NoActionBar" />
         <activity
-            android:name=".HomeActivity"
+            android:name=".activities.HomeActivity"
             android:label="@string/title_activity_home"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".SplashScreen"
+            android:name=".activities.SplashScreen"
             android:theme="@style/Theme.AppCompat.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -76,7 +76,6 @@
             </intent-filter>
         </activity>
         <activity android:name=".SelectedCategory" />
-        <activity android:name=".MainActivity" />
     </application>
 
 </manifest>

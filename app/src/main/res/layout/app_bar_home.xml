@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layoutDirection="rtl"
-    tools:context=".HomeActivity">
+    tools:context=".activities.HomeActivity">
 
 
     <android.support.design.widget.AppBarLayout
@@ -31,12 +31,7 @@
                 android:text="كتابي ستور"
                 android:textColor="#fff"/>
 
-            <ImageView
-                android:layout_width="45dp"
-                android:layout_height="45dp"
-                android:src="@drawable/splashapplogo"
-                android:layout_margin="10dp"
-                android:layout_gravity="left"/>
+
         </android.support.v7.widget.Toolbar>
 
     </android.support.design.widget.AppBarLayout>
